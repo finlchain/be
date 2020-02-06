@@ -1,0 +1,4 @@
+C:\Users\didwh\source\repos\cli_module\obj\Debug\cli_module.njsprojAssemblyReference.cache
+C:\Users\didwh\source\repos\cli_module\bin\Microsoft.NodejsTools.WebRole.dll
+C:\KebiHome\myhome\cli\obj\Debug\cli_module.njsprojAssemblyReference.cache
+C:\KebiHome\myhome\cli\bin\Microsoft.NodejsTools.WebRole.dll

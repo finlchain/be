@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/cli/AjaxHandler/ChangeUserKey.js"/>
+
+		<link rel="stylesheet" type="text/css" href="/keyboard/style.css?after"/>
+		<script src="https://code.jquery.com/jquery-3.1.1.js"integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/keyboard/js/crypto.js"></script>
+		<script type='text/javascript' src="/keyboard/js/hangul.js"></script>
+		<script type='text/javascript' src="/keyboard/js/jquery.secureKeyboard.js"></script>
+
+	</head>
+	<body>
+
+		<!--<h3 style="padding: 12px">Change User Key</h3>-->
+
+		<div class="content">
+
+
+			<table width ="450" cellpadding="5">
+			
+				<tr>
+					<td>id : </td>
+					<td>
+						<input class="hideboard" type="text" style="WIDTH: 150pt; HEIGHT: 20pt" id="id" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Password : </td>
+					<td>
+						<input class="nameField" type="password" style="WIDTH: 150pt; HEIGHT: 20pt" id="Password" readonly="readonly"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>color : </td>
+					<td>
+						<select id="color" style="WIDTH: 150pt; HEIGHT: 20pt">
+							<option value="1" selected="selected">1) Red</option>
+							<option value="2">2) Blue</option>
+							<option value="3">3) Yellow</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>shape : </td>
+					<td>
+						<select id="shape" style="WIDTH: 150pt; HEIGHT: 20pt">
+							<option value="1" selected="selected">1) Circle</option>
+							<option value="2">2) Square</option>
+							<option value="3">3) Triangle</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>PublicKey change : </td>
+					<td>
+						<input class="hideboard" type="text" style="WIDTH: 150pt; HEIGHT: 20pt" id="PublicKey" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>KeyFile : </td>
+					<td>
+						<input type="file" style="WIDTH: 150pt; HEIGHT: 20pt" id="files" value="FILE" />
+					</td>
+				</tr>
+
+				<tr>
+				<td></td>
+					<td>
+						<input type="button" style="WIDTH: 150pt; HEIGHT: 20pt" id="change_userkeya" value="공사중..." />
+					</td>
+				</tr>
+
+			</table>
+
+<div id="result"/>
+
+		</div>
+
+	</body>
+</html>

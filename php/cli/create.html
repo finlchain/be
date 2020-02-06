@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/cli/AjaxHandler/KeyCreate.js"/>
+		
+		<link rel="stylesheet" type="text/css" href="/keyboard/style.css?after"/>
+		<script src="https://code.jquery.com/jquery-3.1.1.js"integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/keyboard/js/crypto.js"></script>
+		<script type='text/javascript' src="/keyboard/js/hangul.js"></script>
+		<script type='text/javascript' src="/keyboard/js/jquery.secureKeyboard.js"></script>
+	
+		<style>#imgs{position:absolute;border:1px solid #ccc;background:#333;padding:5px;display:none;color:#fff;}</style>
+	</head>
+	<body>
+
+		<!--<h3 style="padding: 12px">KeyCreate</h3>-->
+
+		<div class="content">
+
+			<div class="alert alert-success" id="alert-success">비밀번호가 일치합니다.</div> 
+			<div class="alert alert-danger" id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+
+			<td><font size=5  color="white">[ Key Creation / Key Recovery ]</font></td>	
+
+
+			<table width ="600" cellpadding="2">
+			
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">Key Password : </td>
+					<td><input class="nameField" type="password" style="WIDTH: 150pt; HEIGHT: 20pt" id="Password" readonly="readonly" /></td>
+					<td><input type="checkbox" id="Password_box"/> <label style="WIDTH: 50pt" id="Password_box_txt">Show</label></td>
+				</tr>
+
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">Key Check Password : </td>
+					<td><input class="nameField" type="password" style="WIDTH: 150pt; HEIGHT: 20pt" id="CheckPassword" readonly="readonly" /></td>
+					<td><input type="checkbox" id="CheckPassword_box"/> <label style="WIDTH: 50pt" id="CheckPassword_box_txt">Show</label></td>
+				</tr>
+
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">1st sentence : </td>
+					<td><input class="nameField" type="password" style="WIDTH: 150pt; HEIGHT: 20pt" id="sentence1" readonly="readonly" /></td>
+					<td><input type="checkbox" id="sentence1_box"/> <label style="WIDTH: 50pt" id="sentence1_box_txt">Show</label></td>
+				</tr>
+
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">2nd sentence : </td>
+					<td><input class="nameField" type="password" style="WIDTH: 150pt; HEIGHT: 20pt" id="sentence2" readonly="readonly" /></td>
+					<td><input type="checkbox" id="sentence2_box"/> <label style="WIDTH: 50pt" id="sentence2_box_txt">Show</label></td>
+				</tr>
+
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">Algorithm : </td>
+					<td>
+						<select id="algorithm"  style="WIDTH: 150pt; HEIGHT: 20pt">
+							<option value="1">1) Secp256k1</option>
+							<option value="2">2) Secp256r1</option>
+							<option value="3" selected="selected">3) Ed25519</option>
+						</select>
+					</td>
+				</tr>
+				
+				</table>
+				
+				<td><font size=5 color="white">[ Key File Encryption ]</font></td>	
+
+				<table width ="600" cellpadding="5">
+			
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">Encryption Password : </td>
+					<td><input class="nameField" type="password" style="WIDTH: 150pt; HEIGHT: 20pt" id="EncPassword" readonly="readonly" /></td>
+					<td><input type="checkbox" id="EncPassword_box"/> <label style="WIDTH: 50pt" id="EncPassword_box_txt">Show</label></td>
+				</tr>
+
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">Encryption Check Password : </td>
+					<td><input class="nameField" type="password" style="WIDTH: 150pt; HEIGHT: 20pt" id="EncCheckPassword" readonly="readonly" /></td>
+					<td><input type="checkbox" id="EncCheckPassword_box"/> <label style="WIDTH: 50pt" id="EncCheckPassword_box_txt">Show</label></td>
+				</tr>
+			
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">Color : </td>
+					<td>
+							<select id="color"  style="WIDTH: 150pt; HEIGHT: 20pt"> 
+							<option value="1" selected="selected">1) Red</option>
+							<option value="2">2) Blue</option>
+							<option value="3">3) Yellow</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">Shape : </td>
+					<td>
+						<select id="shape"  style="WIDTH: 150pt; HEIGHT: 20pt">
+							<option value="1" selected="selected">1) Circle</option>
+							<option value="2">2) Square</option>
+							<option value="3">3) Triangle</option>
+						</select>
+					</td>
+				</tr>
+
+			</table>
+
+			<td><font size=5 color="white">[ Send to ]</font></td>	
+
+			<table width ="600" cellpadding="5">
+				<tr>
+					<td style="WIDTH: 200pt; HEIGHT: 20pt">Email : </td>
+					<td><input class="hideboard" type="text"  style="WIDTH: 150pt; HEIGHT: 20pt" id="email" /></td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="button" style="WIDTH: 150pt; HEIGHT: 20pt" id="KeyRestoration" value="Key Recovery" />
+					</td>
+					<td>
+						<input type="button" style="WIDTH: 150pt; HEIGHT: 20pt" id="KeyCreate" value="Key Creation" />
+					</td>
+	
+				</tr>
+
+			</table>
+
+			<div id="result"/>
+
+		</div>
+
+	</body>
+</html>

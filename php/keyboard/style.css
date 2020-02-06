@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: aliceblue;
+    margin: 0;
+	
+}
+.keyboard{	
+    z-index: 10000;
+    opacity: 1;
+    padding-top: 0.5%;
+    background: SlateGray;
+	border-style: solid;
+	border-color: White ;
+    position: fixed;
+    top: 150%;
+    width: 50%;
+	margin : -1% 50%; 
+    list-style: none;
+    text-align: center;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    /* ie10 */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.keyboard span.null{
+    opacity: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.kr {
+    display: none;
+}
+
+.others{
+    display:none;
+}
+
+.upper{
+    display: none;
+}
+
+.on {
+    display: none;
+}
+
+.symbol:not(.null):hover, .letter:not(.null):hover, .number:not(.null):hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: black;
+    cursor: pointer;
+}
+
+.symbol{
+    float: left;
+    margin: 0 0 1% 0;
+    width: 8%;
+    height: 40px;
+    line-height: 40px;
+    background: #0d1c30;
+    color: ghostwhite;
+    border: 2px ridge white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.symbol.null{
+    width: 4%;
+}
+
+.symbol.del {
+    width: 16%;
+    font-size: 15px;
+    background: darkgray;
+}
+
+.symbol.tab{
+    width: 12%;
+    background: darkgray;
+}
+
+.symbol.enter{
+    width: 20%;
+    background: darkgray;
+}
+
+.symbol.shift{
+    width: 28%;
+    background: darkgray;
+}
+
+.symbol.space{
+    width: 79%;
+    background: darkgray;
+}
+
+.symbol.local{
+    width: 10.5%;
+    background: darkgray;
+}
+
+.symbol.specials{
+    width: 10.5%;
+    background: darkgray;
+    color: whitesmoke;
+}
+
+span[class="off"], span[class="on"]{
+    pointer-events: none;
+}
+
+.letter{
+    float: left;
+    margin: 0 0 1% 0;
+    width: 8%;
+    height: 40px;
+    line-height: 40px;
+    background: #0d1c30;
+    color: ghostwhite;
+    border: 2px ridge white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.line3>.letter.null{
+    width: 5%;
+}
+
+.letter.null{
+    width: 4%;
+}
+
+.letter.local{
+    background: silver;
+    font-size: 20px;
+    width: 24%;
+}
+
+.letter.⌫{
+    background: silver;
+    font-size: 20px;
+    width: 16%;
+}
+
+.letter.del{
+    background: silver;
+    font-size: 20px;
+    width: 16%;
+}
+
+.letter.enter{
+    background: silver;
+    font-size: 15px;
+    width: 18%;
+}
+
+.letter.shift{
+    background: silver;
+    font-size: 15px;
+    width: 20%;
+}
+
+.letter.space{
+    background: silver;
+    font-size: 15px;
+    width: 76%;
+}
+
+.number{
+    float: left;
+    margin: 0 0% 1% 0;
+    margin-left: 4%;
+    margin-right: 1%;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    background: floralwhite;
+    border: 2px ridge white;
+    font-size: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.number.lastitem{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.number.close, .number.enter, .number.del, .number.reset{
+    margin-left: 5%;
+    margin-right: 0%;
+    background: skyblue;
+    color: whitesmoke;
+}
+
+.number.del{
+    margin-left: 5%;
+    margin-right: 0%;
+    background: indianred;
+    color: whitesmoke;
+}
+
+@media (min-height: 700px) {
+    /** 대화면 tablet, laptop **/
+    .number{
+        height: 45px;
+        line-height: 45px;
+        font-size: 25px;
+    }
+
+    .letter{
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
+    }
+
+    .symbol{
+        height: 50px;
+        line-height: 50px;
+        font-size: 17px;
+    }
+}
+
+@media (min-height: 1500px){
+    /** 데스크탑 환경 **/
+    .number{
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    .letter{
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    .symbol{
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+}

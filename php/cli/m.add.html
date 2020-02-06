@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/cli/AjaxHandler/KeyAdd.js"/>
+	</head>
+	<body>
+
+		<!--<h3 style="padding: 12px">Register</h3>-->
+
+		<div class="content">
+
+			<div class="alert alert-success" id="alert-success">비밀번호가 일치합니다.</div> 
+			<div class="alert alert-danger" id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+
+			<table width ="450" cellpadding="5">
+
+				<tr>
+					<td>Password : </td>
+				</tr>
+				<tr>
+					<td>
+						<input type="password"  style="WIDTH: 150pt; HEIGHT: 20pt" id="Password" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Check Password : </td>
+				</tr>
+				<tr>
+					<td>
+						<input type="password"  style="WIDTH: 150pt; HEIGHT: 20pt" id="CheckPassword" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>color : </td>
+				</tr>
+				<tr>
+					<td>
+						<select id="color" style="WIDTH: 150pt; HEIGHT: 20pt">
+							<option value="1" selected="selected">1) Red</option>
+							<option value="2">2) Blue</option>
+							<option value="3">3) Yellow</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>shape : </td>
+				</tr>
+				<tr>
+					<td>
+						<select id="shape" style="WIDTH: 150pt; HEIGHT: 20pt">
+							<option value="1" selected="selected">1) Circle</option>
+							<option value="2">2) Square</option>
+							<option value="3">3) Triangle</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>id : </td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" style="WIDTH: 150pt; HEIGHT: 20pt" id="id" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>KeyFile : </td>
+				</tr>
+				<tr>
+					<td>
+						<input type="file" style="WIDTH: 150pt; HEIGHT: 20pt" id="files" value="FILE" />
+					</td>
+
+
+					<td>
+						<input type="button" style="WIDTH: 150pt; HEIGHT: 20pt" id="KeyAdd" value="KeyAdd" />
+					</td>
+				</tr>
+
+			</table>
+
+<div id="result"/>
+
+
+		</div>
+
+	</body>
+</html>

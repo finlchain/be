@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <?php include './panel.head.html'; ?>
+    </head>
+
+    <body>
+        
+        <!-- <h3 style="padding: 12px">KeyCreate</h3> -->
+
+        <div class="content">
+            
+            <div class="alert alert-success" id="alert-success">비밀번호가 일치합니다.</div>
+            <div class="alert alert-danger" id="alter-danger">비밀번호가 일치하지 않습니다.</div>
+
+            <table width="450" cellpadding="5">
+
+                <tr>
+                    <td>Password : </td>
+                    <td><input class="nameField" type="password" style="width : 150pt; height : 20pt" id="password" readonly="readonly"/></td>
+                </tr>
+
+                <tr>
+                    <td>Check Password : </td>
+                    <td><input class="nameField" type="password" style="width : 150pt; height : 20pt" id="check-password" readonly="readonly"/></td>
+                </tr>
+
+                <tr>
+                    <td>Please enter the first sentence : </td>
+                    <td><input class="nameField" type="text" style="width : 150pt; height : 20pt" id="sentence1" readonly="readonly"/></td>
+                </tr>
+
+                 <tr>
+                     <td>Please enter a second sentence : </td>
+                     <td><input class="nameField" type="text" style="width : 150pt; height : 20pt" id="sentence2" readonly="readonly"/></td>
+                </tr>
+
+                <tr>
+                    <td>color : </td>
+                    <td>
+                        <select id="color" style="width : 150pt; height : 20pt">
+                            <option value="1" selected="selected">1) Red</option>
+                            <option value="2">2) Blue</option>
+                            <option value="3">3) Yellow</option>
+                        </select>
+                    </td>
+                </tr>
+
+                
+            </table>
+        </div>
+    </body>
+</html>

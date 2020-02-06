@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/cli/AjaxHandler/KeyRestoration.js"/>
+	</head>
+	<body>  
+
+		<!--<h3 style="padding: 12px">KeyRestoration</h3>-->
+
+		<div class="content">
+
+			<div class="alert alert-success" id="alert-success">비밀번호가 일치합니다.</div> 
+			<div class="alert alert-danger" id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+
+			<table width ="450" cellpadding="5">
+
+				<tr>
+					<td>Password : </td>
+					<td>
+						<input type="password"  style="WIDTH: 150pt; HEIGHT: 20pt" id="Password" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Check Password : </td>
+					<td>
+						<input type="password"  style="WIDTH: 150pt; HEIGHT: 20pt" id="CheckPassword" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Please enter the first sentence : </td>
+					<td>
+						<input type="text"  style="WIDTH: 150pt; HEIGHT: 20pt" id="sentence1" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Please enter a second sentence : </td>
+					<td>
+						<input type="text"  style="WIDTH: 150pt; HEIGHT: 20pt" id="sentence2" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>color : </td>
+					<td>
+						<select id="color"  style="WIDTH: 150pt; HEIGHT: 20pt">
+							<option value="1" selected="selected">1) Red</option>
+							<option value="2">2) Blue</option>
+							<option value="3">3) Yellow</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>shape : </td>
+					<td>
+						<select id="shape"  style="WIDTH: 150pt; HEIGHT: 20pt">
+							<option value="1" selected="selected">1) Circle</option>
+							<option value="2">2) Square</option>
+							<option value="3">3) Triangle</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>algorithm : </td>
+					<td>
+						<select id="algorithm"  style="WIDTH: 150pt; HEIGHT: 20pt">
+							<option value="1" selected="selected">1) Secp256k1</option>
+							<option value="2">2) Secp256r1</option>
+							<option value="3">3) Ed25519</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>RandomNumber : </td>
+					<td>
+						<input type="text" style="WIDTH: 150pt; HEIGHT: 20pt" id="RandomNumber" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>email : </td>
+					<td>
+						<input type="text" style="WIDTH: 150pt; HEIGHT: 20pt" id="email" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="button" style="WIDTH: 150pt; HEIGHT: 20pt" id="KeyRestoration" value="KeyRestoration" />
+					</td>
+				</tr>
+
+			</table>
+
+			<div id="result"/>
+
+		</div>
+
+	</body>
+</html>
